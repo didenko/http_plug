@@ -3,7 +3,7 @@ synopsis
 
     http_plug <port>
 
-    port is an integer in 1..65535 range. The `http_plug` process will listen on that TCP port and respond with request data to http requests.
+_port_ is an integer in 1..65535 range. The `http_plug` process will listen on that TCP port and echo back with some data to HTTP requests.
 
 purpose
 =======
