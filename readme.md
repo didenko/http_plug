@@ -13,6 +13,6 @@ When troubleshooting network configuration I needed a porocess I knew was listen
 binaries
 ========
 
-Pre-build binaries are at [a shared Google folder](https://drive.google.com/folderview?id=0B3y6CRDewn4hbkFmMmQ1VzNTZFk).
+Pre-build binaries are at [a shared Google folder](https://drive.google.com/folderview?id=0B3y6CRDewn4hbkFmMmQ1VzNTZFk#list).
 
 Only `darwin/amd64` and `windows/amd64` binaries are tested.
