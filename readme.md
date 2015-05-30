@@ -8,7 +8,7 @@ _port_ is an integer in 1..65535 range. The `http_plug` process will listen on t
 purpose
 =======
 
-When troubleshooting network configuration I needed a porocess I knew was listening on a specific TCP port to test firewall configuration. Windows did not seem to have a simple way of doing that.
+When troubleshooting network configuration I needed a process I knew was listening on a specific TCP port to test firewall configuration. Windows did not seem to have a simple way of doing that.
 
 binaries
 ========
