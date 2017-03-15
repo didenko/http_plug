@@ -49,11 +49,7 @@ func init() {
 
 	listenAddr = fmt.Sprintf(addrTpl, uint16(port64))
 
-	respTpl, err = template.New("foo").Parse(`Time = {{.Timestamp}}
-Host = {{.Host}}
-RemoteAddr = {{.RemoteAddr}}
-RequestURI = {{.RequestURI}}
-`)
+	respTpl, err = template.New("foo").Parse("Client = {{.RemoteAddr}}\nServer = {{.Host}}\nTime   = {{.Timestamp}}\n\n")
 }
 
 func PlugServer(w http.ResponseWriter, req *http.Request) {
