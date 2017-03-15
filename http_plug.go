@@ -21,6 +21,7 @@ import (
 	"html/template"
 	"log"
 	"net/http"
+	"os"
 	"strconv"
 	"time"
 )
@@ -65,6 +66,8 @@ func PlugServer(w http.ResponseWriter, req *http.Request) {
 	if err != nil {
 		log.Fatal(err)
 	}
+
+	respTpl.Execute(os.Stdout, r)
 }
 
 func main() {
