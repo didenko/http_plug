@@ -55,7 +55,12 @@ func init() {
 // PlugServer is a handler which writes the timestamp and some
 // utility info back to the requester. It also logs the request.
 func PlugServer(w http.ResponseWriter, req *http.Request) {
-	r := resp{*req, time.Now().Format("20060102150405")}
+
+	if req.URL.Path != "/" {
+		return
+	}
+
+	r := resp{*req, time.Now().UTC().Format("15:04:05 MST")}
 	err := respTpl.Execute(w, r)
 	if err != nil {
 		log.Fatal(err)
